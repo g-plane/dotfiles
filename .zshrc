@@ -5,10 +5,10 @@ export ZSH="/home/gplane/.oh-my-zsh"
 ZSH_THEME="pi"
 
 plugins=(
-	git
-	yarn
-	fast-syntax-highlighting
-	zsh-autosuggestions
+    git
+    yarn
+    fast-syntax-highlighting
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
