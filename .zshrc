@@ -23,6 +23,7 @@ alias cbr='cargo build --release'
 alias ck='cargo check'
 alias ct='cargo test'
 alias cf='cargo fmt'
+alias cr='cargo run'
 
 # opam configuration
 test -r /home/gplane/.opam/opam-init/init.zsh && . /home/gplane/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
