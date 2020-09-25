@@ -7,7 +7,7 @@ fi
 
 export PATH=$HOME/.yarn/bin:$HOME/.config/composer/vendor/bin:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.deno/bin:$PATH
 
-export ZSH="/home/gplane/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="pi"
 
@@ -39,10 +39,6 @@ alias ya='yarn add'
 alias yad='yarn add --dev'
 alias yr='yarn remove'
 
-export GOPATH=/mnt/work/go
-
-# opam configuration
-test -r /home/gplane/.opam/opam-init/init.zsh && . /home/gplane/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
