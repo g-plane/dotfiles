@@ -1,3 +1,7 @@
 [user]
 	email = g-plane@hotmail.com
 	name = Pig Fang
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
