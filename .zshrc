@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH=$HOME/.yarn/bin:$HOME/.config/composer/vendor/bin:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.deno/bin:$PATH
+export PATH=$HOME/.config/composer/vendor/bin:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.deno/bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 
