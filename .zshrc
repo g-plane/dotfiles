@@ -23,6 +23,7 @@ source $ZSH/oh-my-zsh.sh
 export EDITOR=vim
 
 alias ls='exa'
+alias gupam='git pull --rebase --autostash upstream $(git_main_branch)'
 alias art='php artisan'
 alias tinker='php artisan tinker'
 alias cb='cargo build'
