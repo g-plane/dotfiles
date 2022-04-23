@@ -13,7 +13,6 @@ ZSH_THEME=""
 
 plugins=(
     git
-    yarn-autocompletions
     fast-syntax-highlighting
     zsh-autosuggestions
     icd
