@@ -9,7 +9,7 @@ export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.deno/bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="pi"
+ZSH_THEME=""
 
 plugins=(
     git
