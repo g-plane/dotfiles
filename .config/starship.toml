@@ -7,6 +7,7 @@ $git_metrics\
 $git_status\
 $custom\
 $sudo\
+$fill\
 $cmd_duration\
 $line_break\
 $jobs\
@@ -18,6 +19,10 @@ format = '[$duration]($style)'
 
 [directory]
 style = 'bold #1BD6F2'
+
+[fill]
+symbol = ' '
+style = 'none'
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style) '
