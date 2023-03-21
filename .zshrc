@@ -1,5 +1,5 @@
 export PATH=$HOME/.cargo/bin:$HOME/.local/bin:$PATH
-
+export EDITOR=vim
 export ZSH="$HOME/.oh-my-zsh"
 
 eval "$(starship init zsh)"
@@ -12,8 +12,6 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-
-export EDITOR=vim
 
 alias ls='exa'
 alias gupam='git pull --rebase --autostash upstream $(git_main_branch)'
