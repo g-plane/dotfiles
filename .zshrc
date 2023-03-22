@@ -25,6 +25,7 @@ zinit snippet OMZL::functions.zsh
 zinit snippet OMZL::git.zsh
 zinit snippet OMZL::history.zsh
 zinit snippet OMZL::key-bindings.zsh
+zinit snippet OMZL::termsupport.zsh
 zinit snippet OMZP::git
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
