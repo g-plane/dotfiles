@@ -30,3 +30,5 @@ zinit snippet OMZP::git
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light g-plane/icd
+zinit ice atload"zpcdreplay" atclone"./zplug.zsh" atpull"%atclone"
+zinit light g-plane/pnpm-shell-completion
