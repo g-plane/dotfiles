@@ -1,6 +1,6 @@
 [user]
-    name = 'Pig Fang'
-    email = 'g-plane@hotmail.com'
+    name = Pig Fang
+    email = g-plane@hotmail.com
 [pull]
     rebase = true
 [init]
