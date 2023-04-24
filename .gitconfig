@@ -1,7 +1,18 @@
 [user]
-	email = g-plane@hotmail.com
-	name = Pig Fang
+    name = 'Pig Fang'
+    email = 'g-plane@hotmail.com'
 [pull]
-	rebase = true
+    rebase = true
 [init]
-	defaultBranch = main
+    defaultBranch = main
+[commit]
+    gpgSign = true
+[tag]
+    forceSignAnnotated = true
+    gpgSign = true
+    sort = v:refname
+[filter "lfs"]
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
