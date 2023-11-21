@@ -3,6 +3,8 @@
     email = g-plane@hotmail.com
 [pull]
     rebase = true
+[push]
+    useForceIfIncludes = true
 [init]
     defaultBranch = main
 [commit]
