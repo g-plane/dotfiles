@@ -2,4 +2,3 @@
 :set autoindent
 :set smartindent
 :set relativenumber
-inoremap <C-j> <Esc>
