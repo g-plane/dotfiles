@@ -1,8 +1,8 @@
 export PATH=$HOME/.npm/bin:$HOME/.cargo/bin:$HOME/.local/bin:$PATH
 export EDITOR=vim
 
-alias ls='exa'
-alias ll='exa -lh'
+alias ls='eza'
+alias ll='eza -lh'
 alias gupam='git pull --rebase --autostash upstream $(git_main_branch)'
 alias art='php artisan'
 alias tinker='php artisan tinker'
