@@ -32,3 +32,12 @@ zinit light zdharma-continuum/fast-syntax-highlighting
 zinit light g-plane/icd
 zinit ice atload"zpcdreplay" atclone"./zplug.zsh" atpull"%atclone"
 zinit light g-plane/pnpm-shell-completion
+
+xy() {
+  if [[ $https_proxy || $http_proxy ]]; then
+    unset https_proxy http_proxy
+  else
+    export https_proxy="http://127.0.0.1:2081"
+    export http_proxy="http://127.0.0.1:2081"
+  fi
+}

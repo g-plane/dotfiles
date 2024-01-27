@@ -40,3 +40,7 @@ modified = '!${count} '
 staged = '+${count} '
 renamed = '»${count} '
 deleted = '✘${count} '
+
+[custom.proxy]
+symbol = '🚀'
+when = '[[ $https_proxy || $http_proxy ]]'
