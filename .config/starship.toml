@@ -43,4 +43,4 @@ deleted = '✘${count} '
 
 [custom.proxy]
 symbol = '🚀'
-when = '[[ $https_proxy || $http_proxy ]]'
+when = 'test $https_proxy || test $http_proxy'
