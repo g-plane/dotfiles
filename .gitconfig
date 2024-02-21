@@ -5,6 +5,7 @@
     rebase = true
 [push]
     useForceIfIncludes = true
+    followTags = true
 [init]
     defaultBranch = main
 [commit]
