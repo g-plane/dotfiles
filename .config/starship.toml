@@ -26,20 +26,21 @@ style = 'none'
 
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style) '
+symbol = ' '
 style = 'bold #73BB30'
 
 [git_status]
 format = '([$all_status$ahead_behind]($style) )'
 style = 'bold #FF47F6'
-conflicted = '=${count} '
-ahead = '⇡${count} '
-behind = '⇣${count} '
-untracked = '?${count} '
-stashed = '\$${count} '
-modified = '!${count} '
-staged = '+${count} '
-renamed = '»${count} '
-deleted = '✘${count} '
+conflicted = ' ${count} '
+ahead = ' ${count} '
+behind = ' ${count} '
+untracked = ' ${count} '
+stashed = ' ${count} '
+modified = ' ${count} '
+staged = ' ${count} '
+renamed = ' ${count} '
+deleted = ' ${count} '
 
 [custom.proxy]
 symbol = '🚀'
