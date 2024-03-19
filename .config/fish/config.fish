@@ -1,7 +1,7 @@
 set fish_greeting
 
 set PATH "$HOME/.npm/bin:$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
-set EDITOR nvim
+set -gx EDITOR nvim
 
 alias ls='eza'
 alias ll='eza -lh'
