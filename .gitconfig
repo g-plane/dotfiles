@@ -6,6 +6,9 @@
 [push]
     useForceIfIncludes = true
     followTags = true
+[fetch]
+    prune = true
+    pruneTags = true
 [init]
     defaultBranch = main
 [commit]
