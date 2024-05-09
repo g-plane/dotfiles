@@ -23,6 +23,13 @@ function git_last_comitter_branch
   echo $branches[1]
 end
 
+function git_remote_add_fork
+  if not string match -q upstream (git remote)
+    git remote rename origin upstream
+  end
+  git remote add origin (string replace -r ':[^/]+/' ':g-plane/' (git remote get-url upstream))
+end
+
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
@@ -84,6 +91,7 @@ alias grbm='git rebase $(git_main_branch)'
 alias gr='git remote'
 alias grv='git remote --verbose'
 alias gra='git remote add'
+alias graf='git_remote_add_fork'
 alias grrm='git remote remove'
 alias grmv='git remote rename'
 alias grset='git remote set-url'
