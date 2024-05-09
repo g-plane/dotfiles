@@ -30,6 +30,10 @@ function git_remote_add_fork
   git remote add origin (string replace -r ':[^/]+/' ':g-plane/' (git remote get-url upstream))
 end
 
+function git_version_tag
+  git tag $argv[1] -m $argv[1]
+end
+
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
@@ -119,3 +123,4 @@ alias gswc='git switch --create'
 alias gswd='git switch $(git_develop_branch)'
 alias gswm='git switch $(git_main_branch)'
 alias gswl='git switch "$(git_last_comitter_branch)"'
+alias gvt='git_version_tag'
