@@ -17,6 +17,8 @@
     forceSignAnnotated = true
     gpgSign = true
     sort = v:refname
+[remote.main]
+    tagOpt = --tags
 [filter "lfs"]
     required = true
     clean = git-lfs clean -- %f
