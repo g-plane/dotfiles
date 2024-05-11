@@ -17,7 +17,7 @@
     forceSignAnnotated = true
     gpgSign = true
     sort = v:refname
-[remote.main]
+[remote.origin]
     tagOpt = --tags
 [filter "lfs"]
     required = true
