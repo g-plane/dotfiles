@@ -5,14 +5,14 @@ set -gx EDITOR nvim
 
 alias ls='eza'
 alias ll='eza -lh'
-alias art='php artisan'
-alias tinker='php artisan tinker'
 alias cb='cargo build'
 alias cbr='cargo build --release'
 alias ck='cargo check'
 alias ct='cargo test'
 alias cf='cargo fmt'
 alias cr='cargo run'
+alias cl='cargo clippy'
+alias ci='cargo insta test --review --all-features'
 
 if status is-interactive
   alias cd='icd'
