@@ -34,6 +34,11 @@ function git_version_tag
   git tag $argv[1] -m $argv[1]
 end
 
+function git_pull_current_branch_with_retry
+  set -l branch (git branch --show-current)
+  git pull origin $branch || git pull origin $branch
+end
+
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
@@ -76,7 +81,7 @@ alias glgp='git log --stat --patch'
 alias gm='git merge'
 alias gma='git merge --abort'
 alias gmc='git merge --continue'
-alias gl='git pull origin "$(git branch --show-current)"'
+alias gl='git_pull_current_branch_with_retry'
 alias glu='git pull upstream "$(git branch --show-current)"'
 alias gla='git pull --autostash origin "$(git branch --show-current)"'
 alias gp='git push origin "$(git branch --show-current)"'
