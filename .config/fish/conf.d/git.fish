@@ -39,6 +39,22 @@ function git_pull_current_branch_with_retry
   git pull origin $branch || git pull origin $branch
 end
 
+function git_pull -w 'git pull'
+  if test (count $argv) -eq 0
+    git_pull_current_branch_with_retry
+  else
+    git pull $argv
+  end
+end
+
+function git_push -w 'git push'
+  if test (count $argv) -eq 0
+    git push origin "$(git branch --show-current)"
+  else
+    git push $argv
+  end
+end
+
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
@@ -81,10 +97,10 @@ alias glgp='git log --stat --patch'
 alias gm='git merge'
 alias gma='git merge --abort'
 alias gmc='git merge --continue'
-alias gl='git_pull_current_branch_with_retry'
+alias gl='git_pull'
 alias glu='git pull upstream "$(git branch --show-current)"'
 alias gla='git pull --autostash origin "$(git branch --show-current)"'
-alias gp='git push origin "$(git branch --show-current)"'
+alias gp='git_push'
 alias gpd='git push --delete origin'
 alias gpf='git push --force-with-lease --force-if-includes origin "$(git branch --show-current)"'
 alias gpu='git push --set-upstream origin "$(git branch --show-current)"'
