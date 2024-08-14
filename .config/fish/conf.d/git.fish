@@ -28,6 +28,7 @@ function git_remote_add_fork
     git remote rename origin upstream
   end
   git remote add origin (string replace -r ':[^/]+/' ':g-plane/' (git remote get-url upstream))
+  git config remote.origin.partialCloneFilter (git config remote.upstream.partialCloneFilter)
 end
 
 function git_version_tag
