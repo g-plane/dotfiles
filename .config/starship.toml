@@ -52,5 +52,6 @@ style = 'bright-blue'
 disabled = false
 
 [custom.proxy]
-symbol = '🚀'
+symbol = ' '
+style = '#FFB303'
 when = 'test $https_proxy || test $http_proxy'
