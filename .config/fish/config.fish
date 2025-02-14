@@ -18,5 +18,8 @@ alias ci='cargo insta test --review --all-features'
 if status is-interactive
   alias cd='icd'
 
+  set -gx LANG en_US.UTF-8
+  set -gx LC_ALL en_US.UTF-8
+
   starship init fish | source
 end
