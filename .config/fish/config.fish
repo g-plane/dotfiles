@@ -22,4 +22,6 @@ if status is-interactive
   set -gx LC_ALL en_US.UTF-8
 
   starship init fish | source
+
+  fish_config theme choose 'Dracula'
 end
