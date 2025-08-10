@@ -25,3 +25,10 @@ if status is-interactive
 
   fish_config theme choose 'Dracula'
 end
+
+function fish_should_add_to_history
+  for cmd in gvt gc gca tmp cd mkdir rm
+    string match -qr "^$cmd" -- $argv; and return 1
+  end
+  return 0
+end
