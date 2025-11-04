@@ -56,6 +56,12 @@ function git_push -w 'git push'
   end
 end
 
+function git_push_all
+  for remote in $(git remote)
+    git push $remote "$(git branch --show-current)"
+  end
+end
+
 alias g='git'
 alias ga='git add'
 alias gaa='git add --all'
@@ -101,6 +107,7 @@ alias gl='git_pull'
 alias glu='git pull upstream "$(git branch --show-current)"'
 alias gla='git pull --autostash origin "$(git branch --show-current)"'
 alias gp='git_push'
+alias gpa='git_push_all'
 alias gpd='git push --delete origin'
 alias gpf='git push --force-with-lease --force-if-includes origin "$(git branch --show-current)"'
 alias gpu='git push --set-upstream origin "$(git branch --show-current)"'
