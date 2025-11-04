@@ -27,7 +27,7 @@ if status is-interactive
 end
 
 function fish_should_add_to_history
-  for cmd in gvt gc gca tmp cd mkdir rm
+  for cmd in gvt gc gca gcl gclnb tmp cd mkdir rm
     string match -qr "^$cmd" -- $argv; and return 1
   end
   return 0
