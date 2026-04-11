@@ -14,6 +14,8 @@ alias cf='cargo fmt'
 alias cr='cargo run'
 alias cl='cargo clippy'
 alias ci='cargo insta test --review --all-features'
+alias sudo='sudo-rs'
+alias su='su-rs'
 
 if status is-interactive
   alias cd='icd'
